@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <!--toolbar-->
-   <android.support.v7.widget.Toolbar
-       android:id="@+id/toolbarRegisterUser"
-       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-       android:background="@color/colorPrimary"
-       android:layout_width="match_parent"
-       android:layout_height="?attr/actionBarSize"/>
-
-
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolberRegisterUser"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
     <!--Content-->
     <ScrollView
         android:layout_width="match_parent"
@@ -23,142 +22,90 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <!--nickname-->
+            <!--Nick Name-->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--icon-->
+                <!--Icon-->
                 <ImageView
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_action_nick_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-
-                <!--textfield-->
+                <!--TextField-->
                 <EditText
                     android:inputType="text"
-                    android:hint="nick name"
+                    android:hint="nick Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
 
-
-            <!--date-->
+            <!--Date-->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--icon-->
+                <!--Icon-->
                 <ImageView
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_action_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-
-                <!--textfield-->
-                <TextView
-                    android:textStyle="bold"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="18sp"
-                    android:hint="nick name"
+                <!--TextField-->
+                <EditText
+                    android:inputType="text"
+                    android:hint="22/2/2018"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-
             </LinearLayout>
 
-
-
-            <!--weight-->
+            <!--Weight-->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--icon-->
+                <!--Icon-->
                 <ImageView
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
                     android:src="@drawable/ic_action_weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-
-                <!--textfield-->
+                <!--TextField-->
                 <EditText
                     android:inputType="text"
                     android:hint="weight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-
             </LinearLayout>
 
-
-            <!--gender-->
+            <!--Height-->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <!--icon-->
+                <!--Icon-->
                 <ImageView
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_nick_name"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_action_hight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-
-                <!--textfield-->
+                <!--TextField-->
                 <EditText
                     android:inputType="text"
-                    android:hint="nick name"
+                    android:hint="Height"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-
             </LinearLayout>
 
-
-            <!--age-->
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <!--icon-->
-                <ImageView
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_action_nick_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-
-                <!--textfield-->
-                <EditText
-                    android:inputType="text"
-                    android:hint="nick name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-
-
-        </LinearLayout
-
-
-
-            >
-
-
+        </LinearLayout>
 
 
     </ScrollView>
 
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
